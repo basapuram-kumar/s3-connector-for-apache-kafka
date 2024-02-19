@@ -662,15 +662,25 @@ Apache Kafka, Apache Kafka Connect are either registered trademarks or trademark
 ## Note
 This brach is build on top of  v2.15.0m and is required jdk-11 , if the Kafka is runing on v1.8.0 and we can use jdk-11 to compile  this branch.
 How to configure JDK 11 for this.
+```
 #Download openjdk
  wget https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz
- 
+ ```
+and exctract it
+```
  tar -xvf  openjdk-11.0.1_linux-x64_bin.tar.gz
- 
+ ```
+Verify Version
+```
  ./bin/java -version
 openjdk version "11.0.1" 2018-10-16
 
  ~/jdk-11.0.1/bin/java -version
 openjdk version "11.0.1" 2018-10-16
+```
 
-Friom gradlew file, modify JAVACMD=~/jdk-11.0.1/bin/java
+Friom ``gradlew`` file, modify ``JAVACMD=~/jdk-11.0.1/bin/java``
+Build using the below
+```
+./gradlew publishToMavenLocal
+```
