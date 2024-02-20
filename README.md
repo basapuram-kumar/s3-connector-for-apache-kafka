@@ -672,6 +672,7 @@ and exctract it
  ```
 Verify Version
 ```
+cd jdk-11.0.1/
  ./bin/java -version
 openjdk version "11.0.1" 2018-10-16
 
