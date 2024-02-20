@@ -24,11 +24,11 @@ import java.util.Map;
 
 import org.apache.kafka.common.config.ConfigDef;
 import org.apache.kafka.common.utils.AppInfoParser;
-import org.apache.kafka.connect.connector.Connector;
 import org.apache.kafka.connect.connector.Task;
 import org.apache.kafka.connect.errors.ConnectException;
+import org.apache.kafka.connect.sink.SinkConnector;
 
-public class AivenKafkaConnectS3SinkConnector extends Connector {
+public class AivenKafkaConnectS3SinkConnector extends  SinkConnector  {
 
     private Map<String, String> configProperties;
 
